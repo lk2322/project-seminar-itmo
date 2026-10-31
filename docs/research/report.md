@@ -15,35 +15,43 @@
 
 ### Исследователи и разработчики
 
-> Укажите исследователей или разработчиков по вашей теме. Количество смотрите в условиях на Google Диске.
-
 | Имя | Связь с темой, работы или проекты | Ссылка |
 |---|---|---|
-| … | … | … |
+| Dongmei Zhang, Microsoft Research | Основала группу Software Analytics в Microsoft Research Asia и развивала направление Cloud Intelligence (AIOps). Соавтор RCACopilot [2] и бенчмарка OpenRCA [5]. | https://www.microsoft.com/en-us/research/people/dongmeiz/ |
+| Saravan Rajmohan, Microsoft | Руководит исследовательской группой M365, одно из её направлений AIOps. Соавтор исследования LLM на 40 000+ инцидентах [1], RCACopilot [2], работы о LLM-агентах для RCA [4] и стенда AIOpsLab [10]. | https://www.microsoft.com/en-us/research/people/saravar/ |
+| Michael R. Lyu, Китайский университет Гонконга (CUHK) | Надёжность ПО и анализ логов: проект LogPAI и набор логов Loghub, фреймворк Eadro для поиска неисправностей в микросервисах по нескольким источникам данных (ICSE 2023). | https://www.cse.cuhk.edu.hk/lyu/ |
+| Dan Pei, Университет Цинхуа, лаборатория NetMan | Обнаружение аномалий и локализация первопричин в онлайн-сервисах (OmniAnomaly, CIRCA и др.), открытые AIOps-датасеты, соавтор OpenRCA [5]. Вместе с Shenglin Zhang запустил соревнование CCF AIOps Challenge. | https://netman.aiops.org/~peidan |
+| Pinjia He, CUHK-Shenzhen | LLM для DevOps и анализа логов. Автор-корреспондент OpenRCA [5], соавтор Loghub. | https://pinjiahe.github.io/ |
 
 ### Организации
 
-> Укажите организации, компании или лаборатории по вашей теме.
-
 | Название | Работы или проекты по теме | Ссылка |
 |---|---|---|
-| … | … | … |
+| Microsoft Research | RCACopilot: автоматический сбор диагностики и предсказание категории причины с помощью LLM, компонент сбора данных работает в Microsoft больше четырёх лет [2]. Бенчмарк OpenRCA [5] и стенд AIOpsLab [10]. | https://www.microsoft.com/en-us/research/project/aiops/ |
+| Alibaba Group (Alibaba Cloud) | RCAgent: LLM-агент с инструментами на внутренней модели без внешних API, встроен в диагностику Realtime Compute for Apache Flink [3]. | https://arxiv.org/abs/2310.16340 |
+| Лаборатория NetMan, Университет Цинхуа | Открытые датасеты и код AIOps: обнаружение аномалий в KPI и трассах, локализация причин, данные AIOps Challenge 2020. | https://github.com/NetManAIOps |
+| Datadog | Агент Bits AI SRE сам расследует сработавшие алерты: строит гипотезы о причине, проверяет их запросами к телеметрии и помечает подтверждённые и отброшенные. | https://www.datadoghq.com/blog/bits-ai-sre/ |
+| ООО «Пруфтек ИТ» (платформа Artimate) | Российская AIOps-платформа: собирает события из систем мониторинга, коррелирует их с помощью ML, ищет аномалии и причины сбоев. В версии 1.6.0 (апрель 2026) появился LLM-помощник. | https://artimate.ru |
 
 ### Конференции
 
-> Укажите конференции, на которых представляют работы по вашей теме.
-
 | Название | Какие работы по теме представлены | Ссылка |
 |---|---|---|
-| … | … | … |
+| ICSE (International Conference on Software Engineering) | Ahmed et al., 2023: оценка GPT-3.x на 40 000+ инцидентах Microsoft [1]. Eadro, 2023: поиск неисправностей в микросервисах по логам, метрикам и трассам. | https://doi.org/10.1109/ICSE48619.2023.00149 |
+| ESEC/FSE (ACM International Conference on the Foundations of Software Engineering) | Roy et al., 2024: ReAct-агент для RCA на инцидентах Microsoft [4]. | https://researchr.org/publication/RoyZBBLFR24 |
+| ISSRE (IEEE International Symposium on Software Reliability Engineering) | Loghub (2023), TraceAnomaly (2020), AetherLog (2025): RCA по логам с помощью LLM и графа знаний. | https://arxiv.org/abs/2008.06448 |
+| EuroSys (European Conference on Computer Systems) | RCACopilot, 2024 [2]. | https://doi.org/10.1145/3627703.3629553 |
+| HighLoad++ (Россия) | Практические доклады по наблюдаемости и разбору инцидентов. На Saint HighLoad++ 2025 ecom.tech рассказывали, как строили наблюдаемость на OpenTelemetry, Qryn и Coroot; на HighLoad++ 2025 был доклад об устройстве LLM-агентов и их мониторинге. | https://highload.ru/spb/2025/abstracts |
 
 ### Научные журналы
 
-> Укажите журналы, в которых публикуют работы по вашей теме.
-
 | Название | Какие работы по теме опубликованы | Ссылка |
 |---|---|---|
-| … | … | … |
+| ACM Computing Surveys | Обзор методов обнаружения аномалий и RCA в микросервисах [7], обзор 183 работ о LLM в AIOps [8]. | https://doi.org/10.1145/3501297 |
+| IEEE Transactions on Software Engineering | Промышленный опрос о неисправностях микросервисов и эталонная система TrainTicket с 22 воспроизведёнными отказами [9]. Статья получила награду журнала за лучшую статью 2018 года. | https://doi.org/10.1109/TSE.2018.2887384 |
+| Труды ИСП РАН | Обзоры по микросервисной архитектуре: направления будущих исследований, среди них мониторинг (Stojanov et al., 2024), практики развёртывания (Niño-Martínez et al., 2023). | https://www.ispras.ru/proceedings/ |
+| Вестник НГУ. Серия: Информационные технологии | Система выявления аномалий в логах микросервисов на основе распределённой трассировки [11]. | https://doi.org/10.25205/1818-7900-2023-21-1-62-72 |
+| International Journal of Open Information Technologies (INJOIT) | Атаки prompt injection на LLM и способы защиты [13]. | https://injoit.ru |
 
 ## 2. Обзор литературы
 
